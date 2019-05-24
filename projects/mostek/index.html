@@ -6,8 +6,22 @@
         <body style="font-family:DejaVu Sans Light" background="background.jpg">
 
                 <h1>Project: Reviving a rare Mostek Computer</h1>
-                <p>I found this Computer sitting on a shelf of a school, and was granted to take it. I got it with a Monitor, Keyboard, a bunch of Floppy Disks, a EPROM Programmer, a switchbox and several Cables.</p>
-
+                <p>I found this Computer sitting on a shelf of a school, and was granted to take it. I got it with a Monitor, Keyboard, a bunch of Floppy Disks, a EPROM Programmer, a switchbox and several Cables. Here is a picture of it when I take it home:</p>
+                <img src="everythingsmall.jpg" alt="" border="0" width="400" height="300">
+                <p>I didnt expect that it will work right away, because someone wrote "Scrap 17.8.98" on it, probably someone tried to power it up but failed at it. After I Checked all the Capacitors(they all look like new) and the Voltages the Power Supply outputs, I inserted the Cards again and booted it up.<br>
+                Suprise, it wasnt working. I inserted a floppy that was labled with "CPM 2.2", reseted the Computer, but still nothing. I had no idea on how to troubleshoot it, so i just measured everything i could, data and adresslines showed some action, clock also worked but honestly, I had no Idea how to fix this thing. Even after hours of research, i only found three Data Catalogs, with a minimal ammount of Information about theese Boards, and even one with Information about the Computer itself. Its called "SYS-80F".<br>
+                Then I posted my Problem in the <a href="http://www.vcfed.org/forum/showthread.php?69738-Mostek-Z80-CP-M-Computer-System-from-1979">Vintage Computer Forum</a>, and I am so glad I did that. Someone called "<a href="http://www.vcfed.org/forum/member.php?28712-deramp5113">deramp5113</a>" replied to my Thread and said he has a similair Computer called "AID-80F"(A very similair Name), and the Boards have a very similair Layout and the same Chips on them. His Computer only has a Terminal Port, and he told me that he has to press Enter, so the Motherboard can detect the Baud-rate according to the Data sent.<br>
+                That was also not working for me. He had the Idea to Connect the "VDI Serial Port" to the "Serial Terminal" Port, and it worked! The Screen showed the expected Disk Error Message:</p>
+                <img src="diskerrorsmall.jpg" alt="" border="0" width="400" height="300">
+                <p>That was perfect for now to test the Keyboard, and most of the Keys seemed to work. I was very relieved, especially because DeRamp told me that this Keyboard is a "Foam & Foil" Keyboard, and I would have needed to replace them.(Keep this in mind, more about this topic later...)<br>
+                I inserted a floppy disk again, reseted the Computer, pressed enter, and... the Floppy drive made noises and the busy-light lit up! after a second I was also greeted with a promising screen:</p>
+                <img src="cpmsmall.jpg" alt="" border="0" width="400" height="300">
+                <img src="cpmerrorsmall.jpg" alt="" border="0" width="400" height="300">
+                <p>I immediately typed in "dir", and... huh? With every keypress i did the prompt apeared again! I reseted the Computer, and the same problem occured. I tried to boot up a different OS, but this one immediately gave me the error "*****ERROR 14  UNIT NOT OPEN :", whatever this means. Clearly something was broken, hopefully not the floppys. <br>
+                DeRamp suggested me to use his Memory Testing Program, and while typing in th "Loader" that receives the Program over XModem from the PC, I had trouble with entering some letters, the keyboard seemed to die. And like expected, the foam pads inside died, so this keyboard wont be usable for some time until I got replacment pads. Luckily I got the Computer to work with a Terminal Emulator on my Computer.<br>
+                Back to the memory Program, it listd some faulty adresses, all only on one bit in only one quarter of the Memory(because the Computer uses MK4116 Chips, the 8-bit dta bus needs at least 8 chips to store every bit, and for the full 64K memory you need four for each bit which makes up a total of 32 Chips), wich means only one Chip has some bad bits. After some searching for which exact chip is bad, we found it; its one of the beatiful Ceramic chips on the Motherboard. I replaced it(sadly i only had some Plastic Chips laying around), and all the problems mentioned were gone(Except the Keyboard, obviously).</p>
+                <img src="memorysmall.jpg" alt="" border="0" width="400" height="300">
+                <img src="screensmall.jpg" alt="" border="0" width="400" height="300">
 
 
         </body>

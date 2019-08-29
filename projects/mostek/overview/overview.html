@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<link rel="icon" href="mostek.ico">
+		<title>Mostek SYS-80F</title>
+	</head>
+	
+	<body style="font-family:DejaVu Sans Mono" background="mostektiles.png" text="white" link="#00FF00" vlink="#FFFF00" alink="#FF0000">
+		
+		<h1>Overview: Mostek SYS-80F</h1>
+		<a href="../../../index.html">Back to Main Menu</a><br>
+		<a href="../mostek.html">Back to Project: Reviving a rare Mostek Computer</a>
+		<hr/>
+		
+		<h2>Basic Information:</h2>
+		<p style="width: 75%">This Computer was a Microcomputer Mevelopment Systems called "SYS-80FT" made by Mostek and manuafactured in 1979. It is the European Version of the <a href="http://deramp.com/mostek.html">AIM-80F</a> sold in America. Apparently both Computers werent very popular, there is a very limited amount of Information about this Computer on the Internet.<br>
+		The System I own is equippped with a Monitor, Keyboard, EPROM-Programmer and a bunch of Floppy Disks. The Computer uses Eurocards with two 64-pin Connectors in the back, the bottom one is connected to a backplane which conects to all other cards and the top one is individually wired to the ports in the back or the floppy drives. The following Cards are currently installed:</p>
+		<table border="1">
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Specs</th>
+				<th>Picture</th>
+			</tr>
+			<tr>
+				<td>OEM-80E</td>
+				<td>This is the heart of the Computer, its essentially a<br>
+				single-board-computer. It has a bunch of useful<br>
+				functions like a user EPROM socket, a halt indicator<br>
+				and a switch to change the the start adress, either<br>
+				from zero or from the EPROMs that handle the Monitor<br>
+				and Operating System.</td>
+				<td>Z80 CPU<br>16K DRAM<br>4K ROM<br>110-9600 baud serial Interface<br>4 8-bit parralel ports<br>Z80 CTC with 4 counter/timer channels<br>Halt Lamp<br>Restart start position switch</td>
+				<th><a href="oem.jpg"><img src="oemsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>RAM-80BE</td>
+				<td>This Card isnt very interesting, it only adds more RAM<br>
+				to the System and four additional Parralel Ports.</td>
+				<td>48K DRAM<br>4 8-bit parralel ports</td>
+				<th><a href="ram.jpg"><img src="ramsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>FLP-80E</td>
+				<td>This card doesnt look like much, but it is<br>
+				responsible for one of the key functions of the<br>
+				system: the floppy drives. It uses the FD1771 as a<br>
+				floppy controller and everything else is handled by<br>
+				plain logic chips.</td>
+				<td>soft sector compatible<br>compatible with IBM 3740 format<br>capable of up to 4 drives<br>capable of double sided drives<br>full sector buffering for data</td>
+				<th><a href="flp.jpg"><img src="flpsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>VDI-P</td>
+				<td>This is a very unique board. Its essentially a whole<br>
+				microcomputer which acts like a terminal. It uses the<br>
+				Fairchild F8 microcontroller(s) (MK3850 & MK3851) and<br>
+				communicates with the computer over a external serial<br>
+				connecion made to the OEM-80E. It interfaces with a<br>
+				normal ASCII keyboard (although I am unsure if the<br>
+				DB-25 connector in the back of the computer is a<br>
+				standard) and outputs video over RS170.</td>
+				<td>24 lines x 80 char. display<br>5 x 8 dot matrix<br>110-9600 baud serial Interface<br>suports all 128 ASCII characters<br>capable of custom defined characters</td>
+				<th><a href="vdi.jpg"><img src="vdismall.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>Custom V24 Board</td>
+				<td>This Card was made by the schoool I found it at. I<br>
+				assume this card was made to compensate the lack of<br>
+				general purpose serial ports, because thecomputer<br>
+				only offers four unassingned parralel ports.
+				<td>two V24 serial Interfaces</td>
+				<th><a href="v24.jpg"><img src="v24small.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+		</table> 
+		
+		<br><b>more will follow soon...</b>
+		
+	</body>
+</html>

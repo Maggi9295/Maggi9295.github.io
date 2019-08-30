@@ -12,8 +12,11 @@
 		<hr/>
 		
 		<h2>Basic Information:</h2>
-		<p style="width: 75%">This Computer was a Microcomputer Mevelopment Systems called "SYS-80FT" made by Mostek and manuafactured in 1979. It is the European Version of the <a href="http://deramp.com/mostek.html">AIM-80F</a> sold in America. Apparently both Computers werent very popular, there is a very limited amount of Information about this Computer on the Internet.<br>
-		The System I own is equippped with a Monitor, Keyboard, EPROM-Programmer and a bunch of Floppy Disks. The Computer uses Eurocards with two 64-pin Connectors in the back, the bottom one is connected to a backplane which conects to all other cards and the top one is individually wired to the ports in the back or the floppy drives. The following Cards are currently installed:</p>
+		<p style="width: 75%">This Computer was a Microcomputer Mevelopment Systems called "SYS-80FT" made by Mostek and manuafactured in 1979. It is the European Version of the <a href="http://deramp.com/mostek.html">AIM-80F</a> sold in America. Apparently both Computers werent very popular, there is a very limited amount of Information about this Computer on the Internet. I found a few catalogs that had Information about the Boards, but also one about the System. Also some small advertisements, but sadly I wasnt able to find a price for how much this System was sold at. Here are a few Pictures:</p>
+		<a href="artwork.png"><img src="artworksmall.png" alt="" border="0" width="470" height="300"></a>
+		<a href="cover.png"><img src="coversmall.png" alt="" border="0" width="675" height="300"></a>
+		<a href="francead.jpg"><img src="franceadsmall.jpg" alt="" border="0" width="515" height="300"></a>
+		<p style="width: 75%">The System I own is equippped with a Monitor, Keyboard, EPROM-Programmer and a bunch of Floppy Disks. The Computer uses Eurocards with two 64-pin Connectors in the back, the bottom one is connected to a backplane which conects to all other cards and the top one is individually wired to the ports in the back or the floppy drives. The following Cards are currently installed:</p>
 		<table border="1">
 			<tr>
 				<th>Name</th>
@@ -23,7 +26,7 @@
 			</tr>
 			<tr>
 				<td>OEM-80E</td>
-				<td>This is the heart of the Computer, its essentially a<br>
+				<td>This is the brain of the Computer, its essentially a<br>
 				single-board-computer. It has a bunch of useful<br>
 				functions like a user EPROM socket, a halt indicator<br>
 				and a switch to change the the start adress, either<br>
@@ -67,12 +70,94 @@
 				<td>This Card was made by the schoool I found it at. I<br>
 				assume this card was made to compensate the lack of<br>
 				general purpose serial ports, because thecomputer<br>
-				only offers four unassingned parralel ports.
+				only offers four unassingned parralel ports. Its not<br>
+				installed currently, because I dont have the need<br>
+				for additional serial ports and dont know how to<br>
+				operate it exactly.</td>
 				<td>two V24 serial Interfaces</td>
 				<th><a href="v24.jpg"><img src="v24small.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
-		</table> 
-		
+		</table>
+		<!-- <p style="width: 75%">Of course thoose arent the only boards aviable, here is a quick overview:</p>
+		<table border="1">
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Specs</th>
+				<th>Picture</th>
+			</tr>
+			<tr>
+				<td>AIM-Z80E</td>
+				<td></td>
+				<td></td>
+				<th><a href="aimz80.png"><img src="aimz80small.png" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>AIM-7XE</td>
+				<td></td>
+				<td></td>
+				<th><a href="aim7x.png"><img src="aim7xsmall.png" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>AIM-68000</td>
+				<td></td>
+				<td></td>
+				<th><a href="aim68000.png"><img src="aim68000small.png" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>DCC-80E</td>
+				<td></td>
+				<td></td>
+				<th><a href="dcc.png"><img src="dccsmall.png" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>A/D-80E</td>
+				<td></td>
+				<td></td>
+				<th><a href="ad.png"><img src="adsmall.png" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+		</table> -->
+		<p style="width: 75%">The power supply uses plug-in cards as well, although its not possible to exchange its position with another card because of the internal wiring. Also a quick overview:</p>
+		<table border="1">
+			<tr>
+				<th>Voltage</th>
+				<th>Description</th>
+				<th>Specs</th>
+				<th>Picture</th>
+			</tr>
+			<tr>
+				<td>+5V</td>
+				<td>This is most certainly the heart of the Computer, it<br>
+				supplys power to almost every part of the Computer. It<br>
+				hasa giant heatsink in the back thats beeing heated by<br>
+				a MJ11015 200W transistor, a IN6096 diode and a full<br>
+				bridge rectifier. Besides of that, it also has a pretty<br>
+				extensive regualting circuit.</td>
+				<td>Volatge: +5V<br>Current: 15A</td>
+				<th><a href="+5v.jpg"><img src="+5vsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>±12V</td>
+				<td>This is a pretty compact circuit that uses the LM317 and<br>
+				LM337 voltage regulators. It also has two LED's in the<br>
+				front to indicate that the two 12V lanes are working.<br>
+				-12V are used by the computer boards to generate -5V<br>
+				for RAM and ROM.</td>
+				<td>Volatge: +12V<br>Current: ~2A?<br>Volatge: -12V<br>Current: ~2A?</td>
+				<th><a href="±12v.jpg"><img src="±12vsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>+24V</td>
+				<td>This card is really simple, it only has a few components<br>
+				and a the 2N3055 used only has a small heatsink. The<br>
+				transistor is rated up to 15A, but the circuit is most<br>
+				likley not rated for such a high current. The +24V are<br>
+				not accessible on the computer boards, and are only<br>
+				used by the floppy drives.</td>
+				<td>Volatge: +24V<br>Current: <15A?</td>
+				<th><a href="+24v.jpg"><img src="+24vsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+		</table>
 		<br><b>more will follow soon...</b>
 		
 	</body>

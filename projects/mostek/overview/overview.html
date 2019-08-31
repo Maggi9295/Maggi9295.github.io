@@ -29,7 +29,7 @@
 				<td>This is the brain of the Computer, its essentially a<br>
 				single-board-computer. It has a bunch of useful<br>
 				functions like a user EPROM socket, a halt indicator<br>
-				and a switch to change the the start adress, either<br>
+				and a switch to change the start adress, either<br>
 				from zero or from the EPROMs that handle the Monitor<br>
 				and Operating System.</td>
 				<td>Z80 CPU<br>16K DRAM<br>4K ROM<br>110-9600 baud serial Interface<br>4 8-bit parralel ports<br>Z80 CTC with 4 counter/timer channels<br>Halt Lamp<br>Restart start position switch</td>
@@ -38,7 +38,7 @@
 			<tr>
 				<td>RAM-80BE</td>
 				<td>This Card isnt very interesting, it only adds more RAM<br>
-				to the System and four additional Parralel Ports.</td>
+				and four additional Parralel Ports to the System.</td>
 				<td>48K DRAM<br>4 8-bit parralel ports</td>
 				<th><a href="ram.jpg"><img src="ramsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
@@ -154,8 +154,126 @@
 				likley not rated for such a high current. The +24V are<br>
 				not accessible on the computer boards, and are only<br>
 				used by the floppy drives.</td>
-				<td>Volatge: +24V<br>Current: <15A?</td>
+				<td>Volatge: +24V<br>Current: ~2A?</td>
 				<th><a href="+24v.jpg"><img src="+24vsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+			</tr>
+		</table>
+		<p style="width: 75%">The Computer uses two Shugart SA801 single sided 8 inch floppy disk drives for data storage. The first drive(A / DK0:) oddly is on the right side, while the second(B / DK1:) is on the left.</p>
+		<a href="frontclosed.jpg"><img src="frontclosedsmall.jpg" alt="" border="0" width="400" height="300"></a>
+		<a href="frontopened.jpg"><img src="frontopenedsmall.jpg" alt="" border="0" width="400" height="300"></a>
+		<p style="width: 75%">I am very lucky that such a great amount of disks had survived, including Operating Systems and Programs. The System looks for a file called OS.BIN and uses this file to boot the operating system. A few disks are compatible with the CP/M format, while others use a format proprietary to the FLP-80DOS(It might be compatible with the IBM 3740 data entry system format, but I havent been able to check that). The following table shows most of the interesting software, I also wrote down which format it uses and supplied a download link so you can try it yourself.</p>
+		<table border="1">
+			<tr>
+				<th>Name</th>
+				<th>Format</th>
+				<th>Company</th>
+				<th>Description</th>
+				<th>Download</th>
+				<th>Picture</th>
+			</tr>
+			<tr>
+				<td>FLP-80DOS</td>
+				<td>FLP-80DOS</td>
+				<td>MOSTEK</td>
+				<td>This was the first Operating system for this Computer and has been especially made for the FLP-80 disk controller. This is why it most likley will not work on any other System than Mostek ones.</td>
+				<td><a href="floppys/FLP-80DOS_MOSTEK.DSK">FLP-80DOS_MOSTEK.DSK</a></td>
+				<th><a href="floppys/FLP-80DOS_MOSTEK.jpg"><img src="floppys/FLP-80DOS_MOSTEKsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>FLP-80DOS</td>
+				<td>FLP-80DOS</td>
+				<td>ENATECHNIK</td>
+				<td>This is essentially the same as the one above, but it says ENATECHNIK instead of MOSTEK. I assume this was supplied by the retailer who also sold this Computer.</td>
+				<td><a href="floppys/FLP-80DOS_ENATECHNIK.DSK">FLP-80DOS_ENATECHNIK.DSK</a></td>
+				<th><a href="floppys/FLP-80DOS_ENATECHNIK.jpg"><img src="floppys/FLP-80DOS_ENATECHNIKsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>MOS-80</td>
+				<td>CP/M</td>
+				<td>MOSTEK</td>
+				<td>Because of the fast rise of CP/M Mostekprobably made a Operating System thats compatible with CP/M. This OS might be compatible with the CP/M format, but it can not directly run programs written for CP/M especially.</td>
+				<td><a href="floppys/MOS-80.DSK">MOS-80.DSK</a></td>
+				<th><a href="floppys/MOS-80.jpg"><img src="floppys/MOS-80small.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>MOS-80</td>
+				<td>CP/M</td>
+				<td>MOSTEK</td>
+				<td>This is just a security copy of the original MOS-80 to avoid wearing the original disk.</td>
+				<td><a href="floppys/MOS-80_COPY.DSK">MOS-80_COPY.DSK</a></td>
+				<th><a href="floppys/MOS-80_COPY.jpg"><img src="floppys/MOS-80_COPYsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>CP/M</td>
+				<td>CP/M</td>
+				<td>DIGITAL RESEARCH</td>
+				<td>This is a original disk that was suplied by Digital Research. Because it has not been modified it does not have the required OS.BIN file on it and thus it cant be used on this System.</td>
+				<td><a href="floppys/CPM2.2.DSK">CPM2.2.DSK</a></td>
+				<th><a href="floppys/CPM2.2.jpg"><img src="floppys/CPM2.2small.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>CP/M</td>
+				<td>CP/M</td>
+				<td>DIGITAL RESEARCH</td>
+				<td>This Version of CP/M is bootable</td>
+				<td><a href="floppys/CPM2.2_COPY.DSK">CPM2.2_COPY.DSK</a></td>
+				<th><a href="floppys/CPM2.2_COPY.jpg"><img src="floppys/CPM2.2_COPYsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>CP/M</td>
+				<td>CP/M</td>
+				<td>DIGITAL RESEARCH</td>
+				<td>This is the exact same Version as the one above.</td>
+				<td><a href="floppys/CPM2.2_SYS80F.DSK">CPM2.2_SYS80F.DSK</a></td>
+				<th><a href="floppys/CPM2.2_SYS80F.jpg"><img src="floppys/CPM2.2_SYS80Fsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>CP/M Link</td>
+				<td>FLP-80DOS</td>
+				<td>ENATECHNIK</td>
+				<td>You might assume this is another version of CP/M, but this is just another FLP-80DOS instance; I assume there is some program that is able to communicate to CP/M on it.</td>
+				<td><a href="floppys/CPM-LINK.DSK">CPM-LINK.DSK</a></td>
+				<th><a href="floppys/CPM-LINK.jpg"><img src="floppys/CPM-LINKsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>BASCOM-80</td>
+				<td>CP/M</td>
+				<td>MICROSOFT</td>
+				<td></td>
+				<td><a href="floppys/BASCOM-80.DSK">BASCOM-80.DSK</a></td>
+				<th><a href="floppys/BASCOM-80.jpg"><img src="floppys/BASCOM-80small.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>BASIC GAMES</td>
+				<td>FLP-80DOS</td>
+				<td>?</td>
+				<td></td>
+				<td><a href="floppys/BASIC-GAMES.DSK">BASIC-GAMES.DSK</a></td>
+				<th><a href="floppys/BASIC-GAMES.jpg"><img src="floppys/BASIC-GAMESsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>BASIC INTERPRETER</td>
+				<td>FLP-80DOS</td>
+				<td>?</td>
+				<td></td>
+				<td><a href="floppys/BASIC-INTERPRETER.DSK">BASIC-INTERPRETER.DSK</a></td>
+				<th><a href="floppys/BASIC-INTERPRETER.jpg"><img src="floppys/BASIC-INTERPRETERsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>PROMMER</td>
+				<td>CP/M</td>
+				<td>JANICH & KLAAS</td>
+				<td></td>
+				<td><a href="floppys/PROMMER.DSK">PROMMER.DSK</a></td>
+				<th><a href="floppys/PROMMER.jpg"><img src="floppys/PROMMERsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
+			</tr>
+			<tr>
+				<td>WORD</td>
+				<td>FLP-80DOS</td>
+				<td>OLYMPIA-WERKE</td>
+				<td></td>
+				<td><a href="floppys/WORD.DSK">WORD.DSK</a></td>
+				<th><a href="floppys/WORD.jpg"><img src="floppys/WORDsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
 		</table>
 		

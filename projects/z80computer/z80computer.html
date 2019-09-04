@@ -10,7 +10,7 @@
 		<a href="../../index.html">Back to Main Menu</a>
 		<hr/>
 		
-		<p style="width: 75%">I ever wanted to build my own Computer, but I thought I would never be able to do that. After Ive seen the "RC2014" Computer, I realized that its not that complicated and decided to recreate this Computer.
+		<p style="width: 75%">I ever wanted to build my own Computer, but I thought I would never be able to do that. After Ive seen the <a href="https://rc2014.co.uk/">"RC2014" Computer</a>, I realized that its not that complicated and decided to recreate this Computer.
 		The "<a href="http://commodorez.com/cactus.html">Cactus</a>" Computer(using a 6502 CPU and a nice looking Frontpanel) heavily inspired this Computer, especially the Front Panel. Sadly my Computer inst in a working condition right now, and still heavily work in progress.</p>
 		<p style="width: 75%">I decided to use a 19" Subrack and eurocards for it, with a 64-Pin Connector on the back.</p>
 		<a href="front.jpg"><img src="frontsmall.jpg" alt="" border="0" width="400" height="300"></a>
@@ -35,13 +35,20 @@
 				<td>CPU</td>
 				<td>1.0</td>
 				<td><b>C</b>entral <b>P</b>rocessing <b>U</b>nit</td>
-				<td>Z80 CPU</td>
+				<td>Z80A CPU<br>adittional /MEMRD, /MEMWR, /IORD & /IOWR</td>
 				<th><a href="cpu.jpg"><img src="cpu.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>CLK</td>
 				<td>1.0</td>
-				<td><b>Cl</b>oc<b>k</b> Generator</td>
+				<td><b>Cl</b>oc<b>k</b> Generator<br>
+				The clock speed is controlled by a 4-bit<br>
+				hexadecimal rotary switch whose output<br>
+				is demultiplexed(inverted output) and<br>
+				used to enable the corresponding clock<br>
+				speed by a NOR gate. To improve the<br>
+				signal quality it is sent through a<br>
+				NOT gate.</td>
 				<td>10 different clock speeds<br>Manual, ~10Hz, 0,1536-7,3728MHz<br>LED clock signal indicator</td>
 				<th><a href="clk.jpg"><img src="clksmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
@@ -49,7 +56,7 @@
 				<td>RAM</td>
 				<td>1.0</td>
 				<td><b>R</b>andom <b>A</b>ccess <b>M</b>emory</td>
-				<td>56k (64k paged)</td>
+				<td>56k (64k paged)<br>two 62256's</td>
 				<th><a href="ram.jpg"><img src="ramsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
@@ -63,7 +70,7 @@
 				<td>SIO</td>
 				<td>1.0</td>
 				<td><b>S</b>erial <b>I</b>nput <b>O</b>utput<br>Under construction!</td>
-				<td>CTS/RTS Handshake<br>two RS-232 ports</td>
+				<td>Z80B SIO<br>CTS/RTS Handshake<br>two RS-232 ports</td>
 				<th><a href="sio.jpg"><img src="siosmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
@@ -74,7 +81,8 @@
 				<th><a href="fpl.jpg"><img src="fplsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 		</table>
-		
+		<p style="width: 75%">For almost all cards I used the schematics of the RC2014, although I modified some a bit and expanded the bus output. If you want to have a look at the KiCad schematics you can find them <a href="schematics.rar">here</a>. Please excuse some bad layouts or weird design decisions, theese schematics are rather old and I havent worked on them for a while. As soon as I update parts on the Computer I will update them. You can see the bus layout here:</p>
+		<a href="gpmcbus.png"><img src="gpmcbussmall.png" alt="" border="0" width="771" height="300"></a>
 		<br><b>more information will follow soon...</b>
 		
 		<hr/><p>This page was last modified <span id="lastmodified"></span>.</p><script>document.getElementById("lastmodified").innerHTML = document.lastModified;</script>

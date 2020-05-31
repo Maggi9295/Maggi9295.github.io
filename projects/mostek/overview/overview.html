@@ -12,162 +12,119 @@
 		<hr/>
 		
 		<h2>Basic Information:</h2>
-		<p style="width: 75%">This Computer was a Microcomputer Development Systems called "SYS-80FT" made by Mostek and manufactured in 1979. It is the European Version of the <a href="http://deramp.com/mostek.html">AIM-80F</a> sold in America. Apparently both Computers weren't very popular, there is a very limited amount of Information about this Computer on the Internet. I found a few catalogs that had Information about the Boards, but also one about the System. Also some small advertisements, but sadly I wasnt able to find a price for how much this System was sold at. Here are a few Pictures:</p>
+		<p style="width: 75%">This Computer was a Microcomputer Development Systems called "SYS-80FT" made by Mostek and manufactured in 1979. The earliest dates in context to this system date back to 1977. It is the European Version of the <a href="http://deramp.com/mostek.html">AIM-80F</a> sold in America. Apparently both Computers weren't very popular, there is a very limited amount of Information about this Computer on the Internet. I found a few catalogs that had Information about the Boards, but also one about the System. Also some small advertisements, but sadly I wasnt able to find a price for how much this System was sold at. Here are a few Pictures found in advertisements:</p>
 		<a href="pictures/francead.png"><img src="pictures/franceadsmall.png" alt="" border="0" width="515" height="300"></a>
 		<a href="pictures/artwork.png"><img src="pictures/artworksmall.png" alt="" border="0" width="470" height="300"></a>
 		<a href="pictures/cover.png"><img src="pictures/coversmall.png" alt="" border="0" width="675" height="300"></a>
 		<p style="width: 75%">The System I own is equippped with a Monitor, Keyboard, EPROM-Programmer and a bunch of Floppy Disks. The Computer uses Eurocards with two 64-pin Connectors in the back, the bottom one is connected to a backplane which conects to all other cards and the top one is individually wired to the ports in the back or the floppy drives. The following Cards are currently installed:</p>
-		<table border="1">
+		<table border="1" style="width:75%">
 			<tr>
-				<th>Name</th>
+				<th style="width:160px">Name</th>
 				<th>Description</th>
-				<th>Specs</th>
+				<th style="width:360px">Specs</th>
 				<th>Picture</th>
 			</tr>
 			<tr>
 				<td>OEM-80E</td>
-				<td>This is the brain of the Computer, its essentially a<br>
-				single-board-computer. It has a bunch of useful<br>
-				functions like a user EPROM socket, a halt indicator<br>
-				and a switch to change the start adress, either<br>
-				from zero or from the EPROMs that handle the Monitor<br>
-				and Operating System.</td>
-				<td>Z80 CPU<br>16K DRAM<br>4K ROM<br>110-9600 baud serial Interface<br>4 8-bit parralel ports<br>Z80 CTC with 4 counter/timer channels<br>Halt Lamp<br>Restart start position switch</td>
+				<td>This is the brain of the Computer, its essentially a single-board-computer. It has a bunch of useful functions like a user EPROM socket, a halt indicator and a switch to change the start adress, either from zero or from the EPROMs that handle the Monitor and Operating System.</td>
+				<td>Z80 CPU<br>16K DRAM<br>4K ROM<br>110-9600 baud serial Interface<br>4x 8-bit parralel ports<br>Z80 CTC with 4 counter/timer channels<br>Halt Lamp<br>Restart start position switch</td>
 				<th><a href="pictures/oem.jpg"><img src="pictures/oemsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>RAM-80BE</td>
-				<td>This Card isnt very interesting, it only adds more RAM<br>
-				and four additional Parralel Ports to the System.</td>
-				<td>48K DRAM<br>4 8-bit parralel ports</td>
+				<td>This Card isnt very interesting, it only adds more RAM and four additional Parralel Ports to the System.</td>
+				<td>48K DRAM<br>4x 8-bit parralel ports</td>
 				<th><a href="pictures/ram.jpg"><img src="pictures/ramsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>FLP-80E</td>
-				<td>This card doesnt look like much, but it is<br>
-				responsible for one of the key functions of the<br>
-				system: the floppy drives. It uses the FD1771 as a<br>
-				floppy controller and everything else is handled by<br>
-				plain logic chips.</td>
+				<td>This card doesnt look like much, but it is responsible for one of the key functions of the system: the floppy drives. It uses the FD1771 as a floppy controller and everything else is handled by plain logic chips.</td>
 				<td>soft sector compatible<br>compatible with IBM 3740 format<br>capable of up to 4 drives<br>capable of double sided drives<br>full sector buffering for data</td>
 				<th><a href="pictures/flp.jpg"><img src="pictures/flpsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>VDI-P</td>
-				<td>This is a very unique board. Its essentially a whole<br>
-				microcomputer which acts like a terminal. It uses the<br>
-				Fairchild F8 microcontroller(s) (MK3850 & MK3851) and<br>
-				communicates with the computer over a external serial<br>
-				connecion made to the OEM-80E. It interfaces with a<br>
-				normal ASCII keyboard (although I am unsure if the<br>
-				DB-25 connector in the back of the computer is a<br>
-				standard) and outputs video over RS170.</td>
+				<td>This is a very unique board. Its essentially a whole microcomputer which acts like a terminal. It uses the Fairchild F8 microcontroller(s) (MK3850 & MK3851) and communicates with the computer over a external serial connecion made to the OEM-80E. It interfaces with a normal ASCII keyboard (although I am unsure if the DB-25 connector in the back of the computer is a standard) and outputs video over RS170.</td>
 				<td>24 lines x 80 char. display<br>5 x 8 dot matrix<br>110-9600 baud serial Interface<br>suports all 128 ASCII characters<br>capable of custom defined characters</td>
 				<th><a href="pictures/vdi.jpg"><img src="pictures/vdismall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>Custom V24 Board</td>
-				<td>This Card was made by the schoool I found it at. I<br>
-				assume this card was made to compensate the lack of<br>
-				general purpose serial ports, because the computer<br>
-				only offers four unassingned parralel ports. Its not<br>
-				installed currently, because I dont have the need<br>
-				for additional serial ports and dont know how to<br>
-				operate it exactly.</td>
-				<td>two V24 serial Interfaces</td>
+				<td>This Card was made by the schoool I found it at. I assume this card was made to compensate the lack of general purpose serial ports, because the computer only offers four unassingned parralel ports. Its not installed currently, because I dont have the need for additional serial ports and dont know how to operate it exactly.</td>
+				<td>2x V24 serial Interfaces</td>
 				<th><a href="pictures/v24.jpg"><img src="pictures/v24small.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 		</table>
-		<!-- <p style="width: 75%">Of course thoose arent the only boards aviable, here is a quick overview:</p>
-		<table border="1">
+		<p style="width: 75%">Of course thoose arent the only boards aviable, here is a quick overview of some that I don't own but are mentioned in the databooks. Mostek offered many in-circuit emulators, which can be plugged directly into the target system and then be controlled by the SYS-80F.</p>
+		<table border="1" style="width:75%">
 			<tr>
-				<th>Name</th>
+				<th style="width:15%">Name</th>
 				<th>Description</th>
-				<th>Specs</th>
 				<th>Picture</th>
 			</tr>
 			<tr>
 				<td>AIM-Z80E</td>
-				<td></td>
-				<td></td>
+				<td>This pair of boards emulates the behaviour of the Z80 CPU. The small external device is connected between the Computer and the target-system. It can be controlled by the SYS-80F and behaves like a real Z80 CPU with a speed of up to 6MHz. This makes it easier to debug Z80 computers.</td>
 				<th><a href="pictures/aimz80.png"><img src="pictures/aimz80small.png" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>AIM-7XE</td>
-				<td></td>
-				<td></td>
+				<td>This is very similair to the booard above, but instead emulates the Fairchild F8 Microprocessor(s) (Mostek 3870). </td>
 				<th><a href="pictures/aim7x.png"><img src="pictures/aim7xsmall.png" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>AIM-68000</td>
-				<td></td>
-				<td></td>
+				<td>Like the name suggests, this also emulates a microprocessor, but instead a 68000. Yes, you've heard right, a MC68000 16-Bit microprocessor. According to the databooks, this board appeared around 1983. It can be executed at a speed of 10MHz and even offers a "Stand-alone" Mode in which it does not require a target-system to execute programs.</td>
 				<th><a href="pictures/aim68000.png"><img src="pictures/aim68000small.png" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>DCC-80E</td>
-				<td></td>
-				<td></td>
+				<td>This board simply provide four RS-232-C compatible serial I/O ports which can act as DTE or DCE.</td>
 				<th><a href="pictures/dcc.png"><img src="pictures/dccsmall.png" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>A/D-80E</td>
-				<td></td>
-				<td></td>
+				<td>These boards offer up to 32 analog inputs and two analog outputs. They are digitized by 12-Bit A/D converters and have input voltage ranges of up to ±10V.</td>
 				<th><a href="pictures/ad.png"><img src="pictures/adsmall.png" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
-		</table> -->
+		</table>
 		<p style="width: 75%">The power supply uses plug-in cards as well, although its not possible to exchange its position with another card because of the internal wiring. Also a quick overview:</p>
-		<table border="1">
+		<table border="1" style="width:75%">
 			<tr>
 				<th>Voltage</th>
 				<th>Description</th>
-				<th>Specs</th>
+				<th style="width:140px">Specs</th>
 				<th>Picture</th>
 			</tr>
 			<tr>
 				<td>+5V</td>
-				<td>This is most certainly the heart of the Computer, it<br>
-				supplys power to almost every part of the Computer. It<br>
-				has a giant heatsink in the back thats beeing heated by<br>
-				a MJ11015 200W transistor, a IN6096 diode and a full<br>
-				bridge rectifier. Besides of that, it also has a pretty<br>
-				extensive regualting circuit.</td>
+				<td>This is most certainly the heart of the Computer, it supplys power to almost every part of the Computer. It has a giant heatsink in the back thats beeing heated by a MJ11015 200W transistor, a IN6096 diode and a full bridge rectifier. Besides that, it also has a pretty extensive regualting circuit.</td>
 				<td>Volatge: +5V<br>Current: 15A</td>
 				<th><a href="pictures/+5v.jpg"><img src="pictures/+5vsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>±12V</td>
-				<td>This is a pretty compact circuit that uses the LM317 and<br>
-				LM337 voltage regulators. It also has two LED's in the<br>
-				front to indicate that the two 12V lanes are working.<br>
-				-12V is used by the computer boards to generate -5V<br>
-				for RAM and ROM.</td>
+				<td>This is a pretty compact circuit that uses the LM317 and LM337 voltage regulators. It also has two LED's in the front to indicate that the two 12V lanes are working. -12V is used by the computer boards to generate -5V for RAM and ROM.</td>
 				<td>Volatge: +12V<br>Current: ~2A?<br>Volatge: -12V<br>Current: ~2A?</td>
 				<th><a href="pictures/±12v.jpg"><img src="pictures/±12vsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 			<tr>
 				<td>+24V</td>
-				<td>This card is really simple, it only has a few components<br>
-				and the 2N3055 used only has a small heatsink. The<br>
-				transistor is rated up to 15A, but the circuit is most<br>
-				likley not rated for such a high current. The +24V are<br>
-				not accessible on the computer boards, and are only<br>
-				used by the floppy drives.</td>
-				<td>Volatge: +24V<br>Current: >~4A?</td>
+				<td>This card is really simple, it only has a few components and the 2N3055 used only has a small heatsink. The transistor is rated up to 15A, but the circuit is most likley not rated for such a high current. The +24V are not accessible on the computer boards, and are only used by the floppy drives.</td>
+				<td>Volatge: +24V<br>Current: ~4A?</td>
 				<th><a href="pictures/+24v.jpg"><img src="pictures/+24vsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
 			</tr>
 		</table>
-		<p style="width: 75%">The Computer uses two Shugart SA801 single sided 8 inch floppy disk drives for data storage. The first drive(A / DK0:) oddly is on the right side, while the second(B / DK1:) is on the left.</p>
+		<p style="width: 75%">The Computer uses two Shugart SA801 single sided 8 inch floppy disk drives for data storage. The first drive(A / DK0) oddly is on the right side, while the second(B / DK1) is on the left.</p>
 		<a href="pictures/frontclosed.jpg"><img src="pictures/frontclosedsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/angledopen.jpg"><img src="pictures/angledopensmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/topleft.jpg"><img src="pictures/topleftsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<p style="width: 75%">I am very lucky that such a great amount of disks had survived, including Operating Systems and Programs. The System looks for a file called OS.BIN and uses this file to boot the operating system. A few disks are compatible with the CP/M format, while others use a format proprietary to the FLP-80DOS(It might be compatible with the IBM 3740 data entry system format, but I havent been able to check that). DeRamp made an <a href="https://deramp.com/downloads/mostek/AID-80F/emulator/">Emulator for this computer</a> which allows you to use all floppy disk formats. It does only emulate a Terminal connection to the Computer, so not all applications might work as expected. The following table shows most of the interesting software, I also wrote down which format it uses and supplied a download link so you can try it yourself.</p>
-		<table border="1">
+		<table border="1" style="width:75%">
 			<tr>
 				<th>Name</th>
 				<th>Format</th>
-				<th>Company</th>
+				<th style="width:160px">Company</th>
 				<th>Description</th>
 				<th>Download</th>
 				<th>Picture</th>
@@ -176,11 +133,7 @@
 				<td>FLP-80DOS</td>
 				<td>FLP-80DOS</td>
 				<td>MOSTEK</td>
-				<td>This was the first Operating system for this<br>
-				Computer and has been especially made for the<br>
-				FLP-80 disk controller. This is why it most<br>
-				likley will not work on any other System than<br>
-				Mostek ones.</td>
+				<td>This was the first Operating system for this Computer and has been especially made for the FLP-80 disk controller. This is why it most likley will not work on any other System than Mostek ones.</td>
 				<td><a href="floppys/FLP-80DOS_MOSTEK.DSK">FLP-80DOS_MOSTEK.DSK</a></td>
 				<th><a href="floppys/FLP-80DOS_MOSTEK.jpg"><img src="floppys/FLP-80DOS_MOSTEKsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -188,10 +141,7 @@
 				<td>FLP-80DOS</td>
 				<td>FLP-80DOS</td>
 				<td>ENATECHNIK</td>
-				<td>This is essentially the same as the one<br>
-				above, but it says ENATECHNIK instead of<br>
-				MOSTEK. I assume this was supplied by the<br>
-				retailer who also sold this Computer.</td>
+				<td>This is essentially the same as the one above, but it says ENATECHNIK instead of MOSTEK. I assume this was supplied by the retailer who also sold this Computer.</td>
 				<td><a href="floppys/FLP-80DOS_ENATECHNIK.DSK">FLP-80DOS_ENATECHNIK.DSK</a></td>
 				<th><a href="floppys/FLP-80DOS_ENATECHNIK.jpg"><img src="floppys/FLP-80DOS_ENATECHNIKsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -199,12 +149,7 @@
 				<td>MOS-80</td>
 				<td>CP/M</td>
 				<td>MOSTEK</td>
-				<td>Because of the fast rise of CP/M Mostek<br>
-				probably made a Operating System thats<br>
-				compatible with CP/M. This OS might be<br>
-				compatible with the CP/M format, but it can<br>
-				not directly run programs written for CP/M<br>
-				especially.</td>
+				<td>Because of the fast rise of CP/M Mostek probably made a Operating System thats compatible with CP/M. This OS might be compatible with the CP/M format, but it can not directly run programs written for CP/M especially.</td>
 				<td><a href="floppys/MOS-80.DSK">MOS-80.DSK</a></td>
 				<th><a href="floppys/MOS-80.jpg"><img src="floppys/MOS-80small.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -212,8 +157,7 @@
 				<td>MOS-80</td>
 				<td>CP/M</td>
 				<td>MOSTEK</td>
-				<td>This is just a security copy of the original<br>
-				MOS-80 to avoid wearing the original disk.</td>
+				<td>This is just a security copy of the original MOS-80 to avoid wearing the original disk.</td>
 				<td><a href="floppys/MOS-80_COPY.DSK">MOS-80_COPY.DSK</a></td>
 				<th><a href="floppys/MOS-80_COPY.jpg"><img src="floppys/MOS-80_COPYsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -221,11 +165,7 @@
 				<td>CP/M</td>
 				<td>CP/M</td>
 				<td>DIGITAL RESEARCH</td>
-				<td>This is a original disk that was suplied by<br>
-				Digital Research. Because it has not been<br>
-				modified it does not have the required<br>
-				OS.BIN file on it and thus it can't be used<br>
-				on this System.</td>
+				<td>This is a original disk that was suplied by Digital Research. Because it has not been modified it does not have the required OS.BIN file on it and thus it can't be used on this System.</td>
 				<td><a href="floppys/CPM2.2.DSK">CPM2.2.DSK</a></td>
 				<th><a href="floppys/CPM2.2.jpg"><img src="floppys/CPM2.2small.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -233,8 +173,7 @@
 				<td>CP/M</td>
 				<td>CP/M</td>
 				<td>DIGITAL RESEARCH</td>
-				<td>This Version of CP/M is bootable, i guess<br>
-				its a modified copy of the one above.</td>
+				<td>This Version of CP/M is bootable, i guess its a modified copy of the one above.</td>
 				<td><a href="floppys/CPM2.2_COPY.DSK">CPM2.2_COPY.DSK</a></td>
 				<th><a href="floppys/CPM2.2_COPY.jpg"><img src="floppys/CPM2.2_COPYsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -242,8 +181,7 @@
 				<td>CP/M</td>
 				<td>CP/M</td>
 				<td>DIGITAL RESEARCH</td>
-				<td>This is the exact same Version as the one<br>
-				above, but bootable.</td>
+				<td>This is the exact same Version as the one above, but bootable.</td>
 				<td><a href="floppys/CPM2.2_SYS80F.DSK">CPM2.2_SYS80F.DSK</a></td>
 				<th><a href="floppys/CPM2.2_SYS80F.jpg"><img src="floppys/CPM2.2_SYS80Fsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -251,10 +189,7 @@
 				<td>CP/M Link</td>
 				<td>FLP-80DOS</td>
 				<td>ENATECHNIK</td>
-				<td>You might assume this is another version of<br>
-				CP/M, but this is just another FLP-80DOS<br>
-				instance; I assume there is some program<br>
-				that is able to communicate to CP/M on it.</td>
+				<td>You might assume this is another version of CP/M, but this is just another FLP-80DOS instance; I assume there is some program that is able to communicate to CP/M on it.</td>
 				<td><a href="floppys/CPM-LINK.DSK">CPM-LINK.DSK</a></td>
 				<th><a href="floppys/CPM-LINK.jpg"><img src="floppys/CPM-LINKsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -262,10 +197,7 @@
 				<td>BASCOM-80</td>
 				<td>CP/M</td>
 				<td>MICROSOFT</td>
-				<td>This Disk only has a few files on it, one of<br>
-				them is named BASCOM.BIN. This program is a<br>
-				compiler for BASIC programs, but I dont know<br>
-				how to operate this program.</td>
+				<td>This Disk only has a few files on it, one of them is named BASCOM.BIN. This program is a compiler for BASIC programs, but I dont know how to operate this program.</td>
 				<td><a href="floppys/BASCOM-80.DSK">BASCOM-80.DSK</a></td>
 				<th><a href="floppys/BASCOM-80.jpg"><img src="floppys/BASCOM-80small.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -273,14 +205,7 @@
 				<td>BASIC GAMES</td>
 				<td>FLP-80DOS</td>
 				<td>MICROSOFT</td>
-				<td>This floppy Disk has a BASIC interpreter<br>
-				made by Microsoft on it. It also has a great<br>
-				amount of BASIC-games on it, including<br>
-				3D Tic-Tac-Toe, Nine Men Morris and a<br>
-				moon-landing-simulator. It also has a pre-<br>
-				comiled chess game called SARGON on it. For<br>
-				thoose who are interested in some game, i<br>
-				put BASIC-listings for download too.</td>
+				<td>This floppy Disk has a BASIC interpreter made by Microsoft on it. It also has a great amount of BASIC-games on it, including 3D Tic-Tac-Toe, Nine Men Morris and a moon-landing-simulator. It also has a pre- comiled chess game called SARGON on it. For thoose who are interested in some games, I put BASIC-listings for download too.</td>
 				<td><a href="floppys/BASIC-GAMES.DSK">BASIC-GAMES.DSK</a><br><a href="floppys/basic-game-listings.rar">basic-game-listings.rar</a></td>
 				<th><a href="floppys/BASIC-GAMES.jpg"><img src="floppys/BASIC-GAMESsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -288,9 +213,7 @@
 				<td>BASIC INTERPRETER</td>
 				<td>FLP-80DOS</td>
 				<td>MICROSOFT</td>
-				<td>This has essentiallly the same content like<br>
-				the disk above, but some different<br>
-				BASIC-games on it.</td>
+				<td>This has essentiallly the same content like the disk above, but some different BASIC-games on it.</td>
 				<td><a href="floppys/BASIC-INTERPRETER.DSK">BASIC-INTERPRETER.DSK</a></td>
 				<th><a href="floppys/BASIC-INTERPRETER.jpg"><img src="floppys/BASIC-INTERPRETERsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -298,10 +221,7 @@
 				<td>PROMMER</td>
 				<td>CP/M</td>
 				<td>JANICH & KLAAS</td>
-				<td>This seems to be a tool to operate some kind<br>
-				of PROM programmer. It does NOT work with the<br>
-				programming device by Mostek, and i could not<br>
-				figure out how this tool is operated.</td>
+				<td>This seems to be a tool to operate some kind of PROM programmer. It does NOT work with the programming device by Mostek, and I could not figure out how this tool is operated or which device is required for it.</td>
 				<td><a href="floppys/PROMMER.DSK">PROMMER.DSK</a></td>
 				<th><a href="floppys/PROMMER.jpg"><img src="floppys/PROMMERsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>
@@ -309,9 +229,7 @@
 				<td>WORD</td>
 				<td>FLP-80DOS</td>
 				<td>OLYMPIA-WERKE</td>
-				<td>This seems to be some kind of word processing<br>
-				program, but it doesnt seem to start without<br>
-				a Centronics Line Printer attached.</td>
+				<td>This seems to be some kind of word processing program, but it doesnt seem to start without a Line Printer attached.</td>
 				<td><a href="floppys/WORD.DSK">WORD.DSK</a></td>
 				<th><a href="floppys/WORD.jpg"><img src="floppys/WORDsmall.jpg" alt="" border="0" width="150" height="150"></a></th>
 			</tr>

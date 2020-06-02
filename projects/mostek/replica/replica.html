@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<link rel="icon" href="mostek.ico">
+		<title>Mostek SYS-80F Replica</title>
+	</head>
+	
+	<body style="font-family:DejaVu Sans Mono" bgcolor="#0000B0" background="mostektiles.png" text="white" link="#00FF00" vlink="#FFFF00" alink="#FF0000">
+		
+		<h1>Replica: Mostek SYS-80F</h1>
+		<a href="../../../index.html">Back to Main Menu</a><br>
+		<a href="../mostek.html">Back to Project: Reviving a rare Mostek Computer</a>
+		<hr/>
+		
+		<h2>Basic Information:</h2>
+		<p style="width: 75%">In late 2019 someone named Rüdiger Kupke contacted me and told me he has a homebrew replica of the SYS-80F. While developing Z80 automation software for steel mills in the 80s, he decided to make a clone of the SYS-80F. The circuitry is not equivalent to the one present in the SYS-80F, but long nights disassembling, commenting and adapting the firmware made it possible to be software-compatible. Together with his friends he spent a lot of time getting the System to run, and eventually it worked. Now, 35 years later he finally managed to boot it again. Sadly the Powersupply does not work, so he had to use a AT powersupply for now; here is a picture of this pretty system:</p>
+		<a href="pictures/system.jpg"><img src="pictures/systemsmall.jpg" alt="" border="0" width="400" height="300"></a>
+		<p style="width: 75%">The cards used were initially meant to be installed in industrial applications, and were repurposed. Some needed almost no change, while other cards had to be made entirely new.</p>
+		<table border="1" style="width:80%">
+			<tr>
+				<th style="width:160px">Name</th>
+				<th>Description</th>
+				<th style="width:260px">Specs</th>
+				<th>Picture(front)</th>
+				<th>Picture(back)</th>
+				<th>Schematics</th>
+			</tr>
+			<tr>
+				<td>CPU</td>
+				<td>This card has many similarities with the OEM-80E. It houses the CPU, ROM and a basic amount of RAM. Some modifications were needed for it to work as desired.</td>
+				<td>Z80 CPU<br>2KB SRAM<br>4KB ROM<br>Z80 CTC<br>Halt Lamp<br>Reset button</td>
+				<th><a href="pictures/cpufront.jpg"><img src="pictures/cpufrontsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="pictures/cpuback.jpg"><img src="pictures/cpubacksmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="Z80-CPU-Karte.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>RAM</td>
+				<td>All RAM is present on this card, nothing fancy besides the refresh circuitry.</td>
+				<td>64K DRAM</td>
+				<th><a href="pictures/ramfront.jpg"><img src="pictures/ramfrontsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="pictures/ramback.jpg"><img src="pictures/rambacksmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="Z80-RAM-Karte.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>Floppy Disk Controller</td>
+				<td>Now the magic begins: This fancy card hosts the floppy disk controller and is entirely wire-wrapped. Imagine the joy of finally seeing it work after dozens of hours troubleshooting it!</td>
+				<td>capable of up to 4 drives</td>
+				<th><a href="pictures/fdcfront.jpg"><img src="pictures/fdcfrontsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="pictures/fdcback.jpg"><img src="pictures/fdcbacksmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="Z80-FDC-Karte.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>Serial In/Out 1</td>
+				<td>With this card you can conect this computer to a terminal and operate it.</td>
+				<td>1x RS-232-C Interface</td>
+				<th><a href="pictures/siofront.jpg"><img src="pictures/siofrontsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="pictures/sioback.jpg"><img src="pictures/siobacksmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="Z80-SIO-Karte.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>Serial In/Out 2</td>
+				<td>This card is very similar to the one above, but it features two RS-232-C interfaces.</td>
+				<td>2x RS-232-C Interfaces</td>
+				<th><a href="pictures/sio2front.jpg"><img src="pictures/sio2frontsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="pictures/sio2back.jpg"><img src="pictures/sio2backsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="Z80-SIO-Karte.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>8-Bit Input</td>
+				<td>This card is used to implement 8 general urpose input bits.</td>
+				<td>8 bits of input</td>
+				<th><a href="pictures/inputfront.jpg"><img src="pictures/inputfrontsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="pictures/inputback.jpg"><img src="pictures/inputbacksmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="Z80-INP-Karte.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>8-Bit Output</td>
+				<td>Like the card above, but with 8 outputs using LEDs.</td>
+				<td>8 bits of output</td>
+				<th><a href="pictures/outputfront.jpg"><img src="pictures/outputfrontsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="pictures/outputback.jpg"><img src="pictures/outputbacksmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="Z80-OUT-Karte.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>Bus Termination</td>
+				<td>This card is used to make the bus signals cleaner to prevent corrupt data and make the computer work more stable.</td>
+				<td>passive termination using resistor networks</td>
+				<th><a href="pictures/busfront.jpg"><img src="pictures/busfrontsmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th><a href="pictures/busback.jpg"><img src="pictures/busbacksmall.jpg" alt="" border="0" width="200" height="150"></a></th>
+				<th></th>
+			</tr>
+		</table>
+		<p style="width: 75%">Originally he also designed a Terminal compatible to the one used in the SYS-80F, but currently he uses the Computer to act as a Terminal. To store data 8 inch floppy disks and drives are used.</p>
+		<a href="pictures/floppy.jpg"><img src="pictures/floppysmall.jpg" alt="" border="0" width="400" height="300"></a>
+		<a href="pictures/floppydrive.jpg"><img src="pictures/floppydrivesmall.jpg" alt="" border="0" width="400" height="300"></a>
+		<a href="pictures/floppyconnector.jpg"><img src="pictures/floppyconnectorsmall.jpg" alt="" border="0" width="225" height="300"></a>
+		<p style="width: 75%">I am very happy that Rüdiger Kupke contacted me and provided all this information. He also provided a scan of the FLP-80DOS user manual, but because of the immense size (~200MB) I will not upload it here. If you want it, feel free to contact me!</p>
+		
+		<hr/><p>This page was last modified <span id="lastmodified"></span>.</p><script>document.getElementById("lastmodified").innerHTML = document.lastModified;</script>
+		
+	</body>
+</html>

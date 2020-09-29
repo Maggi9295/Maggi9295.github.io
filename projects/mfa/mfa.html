@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel="icon" href="z80.ico">
-		<title>The GPMC Z80 Computer</title>
+		<title>Mikrocomputer für Ausbildung</title>
 	</head>
 	
 	<body style="font-family:DejaVu Sans Mono" bgcolor="#0000B0" background="z80tiles.png" text="white" link="#00FF00" vlink="#FFFF00" alink="#FF0000">
@@ -10,84 +10,138 @@
 		<a href="../../index.html">Back to Main Menu</a>
 		<hr/>
 		
-		<p style="width: 75%">WIP!!! I ever wanted to build my own Computer, but I thought I would never be able to do that. After Ive seen the <a href="https://rc2014.co.uk/">"RC2014" Computer</a>, I realized that its not that complicated and decided to recreate this Computer.
-		The "<a href="http://commodorez.com/cactus.html">Cactus</a>" Computer(using a 6502 CPU and a nice looking Frontpanel) heavily inspired this Computer, especially the Front Panel. So I started building it in the Summer of 2018, and slowly completed all cards. Sadly my Computer inst in a working condition right now, and still heavily under construction.
-		If you wonder about the name, I have choosen this (unordinary) name because 1. I wanted a nice abbreviation 2. I wanted it to have "microcomputer" in it and 3. I wanted the name to indicate that it can perform all kinds of tasks (for example run BASIC, CP/M or just any assmbler code; be programmed through a serial terminal or the frontpanel; control all kinds of electronics through I/O ports) and 4. I dont want the abbreviation to be easily confound with something that already uses this term.</p>
-		<p style="width: 75%">I decided to use a 19" Subrack and eurocards for it, with a 64-Pin Connector on the back.</p>
-		<a href="pictures/front.jpg"><img src="pictures/frontsmall.jpg" alt="" border="0" width="400" height="300"></a>
-		<a href="pictures/card.jpg"><img src="pictures/cardsmall.jpg" alt="" border="0" width="400" height="300"></a>
-		<p style="width: 75%">This table shows all the cards in the current(or outdated) state:</p>
+		<p style="width: 75%">This neat microcomputer was made for training, education and schooling. It was published in Germany by the "Berufsfortbildungszenter Essen" ("Professional training center Essen") around 1984. It's powered by a 8085 processor at 2MHz clock speed and is modular by many means. This computer really helps understanding how microcomputers work and is a great tool to learn assembly. Together with its monitor program expansion you can even use a BASIC interpreter.</p>
+		<p style="width: 75%">This table shows all the modules I own, there are many more available:</p>
+		<br><b>pictures and manuals will be added soon...</b>
 		<table border="1" style="width:75%">
 			<tr>
 				<th>Name</th>
-				<th>Version</th>
+				<th>Number</th>
 				<th>Description</th>
-				<th style="width:300px">Specs</th>
+				<th style="width:200px">Specs</th>
 				<th>Picture</th>
-				<th>Schematic</th>
+				<th>Frontpanel</th>
+				<th>Manual</th>
 			</tr>
 			<tr>
-				<td>PSU</td>
-				<td>1.0</td>
-				<td><b>P</b>ower <b>S</b>upply <b>U</b>nit</td>
-				<td>Input: ~+7-25V<br>Output: +5V<br>Current: ~1,5A</td>
-				<td><a href="pictures/psu.jpg"><img src="pictures/psusmall.jpg" alt="" border="0" width="200" height="150"></a></td>
-				<td>None(It's simple!)</td>
+				<td>TRAFO-EINSCHUB</td>
+				<td>1.1.</td>
+				<td>This module is responsible for reducing and rectifying mains voltage for the "SPANNUNGS-REGELUNG"-module.</td>
+				<td>-Output voltages:<br>+9V at 4A<br>+15V at 0,5A<br>-15V at 0,5A<br>-Power switch<br>-Fuse</td>
+				<td><a href="pictures/psu1.jpg"><img src="pictures/psu1small.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/psu1front.jpg"><img src="pictures/psu1frontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="psu1.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
 			</tr>
 			<tr>
-				<td>CPU</td>
-				<td>1.0</td>
-				<td><b>C</b>entral <b>P</b>rocessing <b>U</b>nit</td>
-				<td>Z80A CPU<br>adittional /MEMRD, /MEMWR, /IORD & /IOWR</td>
+				<td>SPANNUNGS-REGELUNG</td>
+				<td>1.2.</td>
+				<td>This module takes the voltages recieved from the "TRAFO-EINSCHUB" and regulate them in a more precise way.</td>
+				<td>Output voltages:<br>+5V at 4A<br>+12V at 0,5A<br>-12V at 0,5A<br>-Overvoltage protection for +5V<br>-100Hz TTL signal</td>
+				<td><a href="pictures/psu2.jpg"><img src="pictures/psu2small.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/psu2front.jpg"><img src="pictures/psu2frontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="psu2.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>PROZESSOR 8085</td>
+				<td>2.1.</td>
+				<td>This module is home to the CPU which does all the processing. The serial interface is connnected to the bus but I've also added a DE-9 Connector to the front for use with a terminal.</td>
+				<td>-Intel 8085 CPU<br>-V24/RS232 interface<br>-TTY interface<br>-2MHz clock speed<br>-Fully buffered bus</td>
 				<td><a href="pictures/cpu.jpg"><img src="pictures/cpusmall.jpg" alt="" border="0" width="200" height="150"></a></td>
-				<td><a href="pictures/CPU.svg"><img src="pictures/CPU.png" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/cpufront.jpg"><img src="pictures/spufrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="cpu.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
 			</tr>
 			<tr>
-				<td>CLK</td>
-				<td>1.0</td>
-				<td><b>Cl</b>oc<b>k</b> Generator<br>
-				The clock speed is controlled by a 4-bit hexadecimal rotary switch whose output is demultiplexed(inverted output) and used to enable the corresponding clock speed by a NOR gate. (Wrong gates in schematic) To improve the signal quality it is sent through a NOT gate. </td>
-				<td>10 different clock speeds<br>Manual, ~10Hz, 0,1536-7,3728MHz<br>LED clock signal indicator</td>
-				<td><a href="pictures/clk.jpg"><img src="pictures/clksmall.jpg" alt="" border="0" width="200" height="150"></a></td>
-				<td><a href="pictures/CLK.svg"><img src="pictures/CLK.png" alt="" border="0" width="200" height="150"></a></td>
+				<td>8 K RAM/EPROM</td>
+				<td>3.1.</td>
+				<td>This is a rather simple module, it features 4x 2K memory chips, either 6116 RAM or 2716 EPROM. It can be placed every 8K steps in memory.</td>
+				<td>-4x 2K memory chips<br>-DIP-switch for base adress<br>-Buffered adress and data bus</td>
+				<td><a href="pictures/8kmem.jpg"><img src="pictures/8kmemsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/8kmemfront.jpg"><img src="pictures/8kmemfrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="8kmem.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
 			</tr>
 			<tr>
-				<td>RAM</td>
-				<td>1.0</td>
-				<td><b>R</b>andom <b>A</b>ccess <b>M</b>emory</td>
-				<td>56k (64k paged)<br>two 62256's</td>
-				<td><a href="pictures/ram.jpg"><img src="pictures/ramsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
-				<td><a href="pictures/RAM.svg"><img src="pictures/RAM.png" alt="" border="0" width="200" height="150"></a></td>
+				<td>16 K RAM/EPROM</td>
+				<td>3.2.</td>
+				<td>This module is similair to the "8 K RAM/EPROM" module, but with additional 4x 2K memory chips. It also features a otion for a bootloader EPROM wich can be used with DOSs.</td>
+				<td>-8x 2K memory chips<br>-Jumpers for base adress<br>-Buffered adress and data bus<br>-Option for bootloader EPROM</td>
+				<td><a href="pictures/16kmem.jpg"><img src="pictures/16kmemsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/16kmemfront.jpg"><img src="pictures/16kmemfrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="16kmem.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
 			</tr>
 			<tr>
-				<td>ROM</td>
-				<td>1.0</td>
-				<td><b>R</b>ead <b>O</b>nly <b>M</b>emory<br>
-				Note that the current circuit and the board have an error in it, pins 1 & 2 of the 74'393 need to be swapped and PAGE has to be conected to pin 3 instead of 6.</td>
-				<td>accepts 2716 to 27512<br>can be paged in and out</td>
-				<td><a href="pictures/rom.jpg"><img src="pictures/romsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
-				<td><a href="pictures/ROM.svg"><img src="pictures/ROM.png" alt="" border="0" width="200" height="150"></a></td>
+				<td>8-BIT-PARALLEL-AUSGABE</td>
+				<td>4.1.</td>
+				<td>This module simply adds a 8-bit output port, displaying its status with LEDs and offering 8 output ports.</td>
+				<td>-8 output ports<br>-DIP switch for I/O-adress</td>
+				<td><a href="pictures/out.jpg"><img src="pictures/outsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/outfront.jpg"><img src="pictures/outfrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="out.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
 			</tr>
 			<tr>
-				<td>SIO</td>
-				<td>1.0</td>
-				<td><b>S</b>erial <b>I</b>nput <b>O</b>utput<br>Under construction!</td>
-				<td>Z80B SIO<br>CTS/RTS Handshake<br>2x RS-232 ports</td>
-				<td><a href="pictures/sio.jpg"><img src="pictures/siosmall.jpg" alt="" border="0" width="200" height="150"></a></td>
-				<td><a href="pictures/SIO.svg"><img src="pictures/SIO.png" alt="" border="0" width="200" height="150"></a></td>
+				<td>8-BIT-PARALLEL-EINGABE</td>
+				<td>4.2.</td>
+				<td>This module is similair to the one above, but with inputs instead of outputs. An input is given by 8 toggle switches.</td>
+				<td>-8 input ports<br>-DIP switch for I/O-adress<br>-8 toggle switches as input</td>
+				<td><a href="pictures/in.jpg"><img src="pictures/insmall.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/infront.jpg"><img src="pictures/infrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="in.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
 			</tr>
 			<tr>
-				<td>FPL</td>
-				<td>1.0</td>
-				<td><b>F</b>ront <b>P</b>anel <b>L</b>ogic<br>Under construction!</td>
-				<td>displays current bus status<br>allows examine and deposit up and down<br></td>
-				<td><a href="pictures/fpl.jpg"><img src="pictures/fplsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
-				<td><a href="pictures/front.svg"><img src="pictures/front.png" alt="" border="0" width="200" height="150"></a></td>
+				<td>BUS-SIGNALGEBER<br>(PRÜF I)</td>
+				<td>5.1.</td>
+				<td>This is a very neat module, with it you can access memory and I/O ports and read/write data.</td>
+				<td>-4 hex. adress switches<br>-2 hex. data switches<br>-IO/MEM read/write & instr. buttons<br>-Addr.-stop</td>
+				<td><a href="pictures/prüf1.jpg"><img src="pictures/prüf1small.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/prüf1front.jpg"><img src="pictures/prüf1frontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="prüf1.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>BUS-SIGNALANZEIGE<br>(PRÜF II)</td>
+				<td>5.2.</td>
+				<td>With this module you are able to view the bus status and debug the computer/programs. You can single-step the CPU and make it stop at a specified adress.</td>
+				<td>-4 hex. adress display<br>-2 hex. data display<br>-IO/MEM read/write LEDs<br>-Single-step button</td>
+				<td><a href="pictures/prüf2.jpg"><img src="pictures/prüf2small.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/prüf2front.jpg"><img src="pictures/prüf2frontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="prüf2.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>VID./KEYB. INTERFACE</td>
+				<td>8.2.</td>
+				<td>This module essentially is a very basic terminal, with a V24/RS232 interface, an ASCII-keyboard input, and a BAS video output(monochrome composite).</td>
+				<td>-V24/RS232 interface<br>-ASCII-keyboard port<br>-BAS video output<br>-16x64 character display<br>-5x8 pixel per character</td>
+				<td><a href="pictures/term.jpg"><img src="pictures/termsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/termfront.jpg"><img src="pictures/termfrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="term.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>EPROM-PROGRAMMIERER</td>
+				<td>4.3.a</td>
+				<td>With the help of this module you are able to read and write 2716 EPROMs. The programming voltage however has to be supplied by an external source.</td>
+				<td>-Reads/writes 2716 EPROMs<br>-Requires external 27V for programming<br>-Status LEDs</td>
+				<td><a href="pictures/prog.jpg"><img src="pictures/progsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/progfront.jpg"><img src="pictures/progfrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="prog.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>DRUCKER-INTERFACE</td>
+				<td>4.3.b</td>
+				<td>This module is very straightforward and just adds a printer interface to the computer.</td>
+				<td>-8-bit printer port</td>
+				<td><a href="pictures/print.jpg"><img src="pictures/printsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/printfront.jpg"><img src="pictures/printfrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="print.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
+			</tr>
+			<tr>
+				<td>Adapterkarte 64polig</td>
+				<td>5.3.</td>
+				<td>This is an extension card used to make testing or debugging any modules easier by mounting them outside of the case.</td>
+				<td>-64 pins<br>-every pin can be interrupted</td>
+				<td><a href="pictures/riser.jpg"><img src="pictures/risersmall.jpg" alt="" border="0" width="200" height="150"></a></td>
+				<td><a href="pictures/riserfront.jpg"><img src="pictures/riserfrontsmall.jpg" alt="" border="0" width="100" height="150"></a></td>
+				<th><a href="riser.pdf"><img src="pictures/pdf.png" alt="" border="0" width="40" height="50"></a></th>
 			</tr>
 		</table>
-		<p style="width: 75%">For almost all cards I used the schematics of the RC2014, although I modified some a bit and expanded the bus output. If you want to have a look at the KiCad schematics you can download them <a href="schematics.zip">here</a>. I try to keep them up to date, but some might differ from the current circuit. You can see the bus layout here:</p>
-		<a href="pictures/gpmcbus.png"><img src="pictures/gpmcbussmall.png" alt="" border="0" width="771" height="300"></a>
-		<p style="width: 75%">A detailed Memory Map will be added soon. Once I've got this computer working I will update this page. (I'm working on it!)</p>
+		<br><b>more will follow soon...</b>
 		
 		<hr/><p>This page was last modified <span id="lastmodified"></span>.</p><script>document.getElementById("lastmodified").innerHTML = document.lastModified;</script>
 		

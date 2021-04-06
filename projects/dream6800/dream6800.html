@@ -17,7 +17,7 @@
 		<p style="width: 75%">The first one was the original layout shown in the EA Article:</p>
 		<a href="pictures/originalpcbtop.jpg"><img src="pictures/originalpcbtopsmall.jpg" alt="" border="0" width="500" height="300"></a>
 		<a href="pictures/originalpcbbottom.jpg"><img src="pictures/originalpcbbottomsmall.jpg" alt="" border="0" width="500" height="300"></a>
-		<p style="width: 75%">the second one was made by David Fry which is a 40th Anniversary Edition of the DREAM 6800 thats mostly identical, only the two 2114 RAM chips were changed to 6116 RAM Chips and the 2708 EPROM was changed to a 2716/2732 EPROM. In order to reduce high production costs of the pcb the whole circuit had been highly compressed onto a double-sided PCB:</p>
+		<p style="width: 75%">The second one was made by David Fry which is a 40th Anniversary Edition of the DREAM 6800 thats mostly identical, only the two 2114 RAM chips were changed to 6116 RAM Chips and the 2708 EPROM was changed to a 2716/2732 EPROM. In order to reduce high production costs of the pcb the whole circuit had been highly compressed onto a double-sided PCB:</p>
 		<a href="pictures/40yearassembled.jpg"><img src="pictures/40yearassembledsmall.jpg" alt="" border="0" width="450" height="300"></a>
 		<a href="pictures/40yearpcb.jpg"><img src="pictures/40yearpcbsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<p style="width: 75%">I decided that I defently wanted to keep the look of the original circuit boardboard, but because the original pcb had such a bad resolution I first decided to remake the whole board in Kicad. I wanted to keep the original look of the Computer, first because it looks really unique and second because it is only single-sided and therefore "easy" to etch myself. I simply used the schematics of the 40th Anniversary version and simply remade the whole circuit board. Here is the Result of that:</p>
@@ -30,24 +30,24 @@
 		<a href="pictures/board.jpg"><img src="pictures/boardsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/assembly.jpg"><img src="pictures/assemblysmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/finished.jpg"><img src="pictures/finishedsmall.jpg" alt="" border="0" width="400" height="300"></a>
-		<p style="width: 75%">Now I only had to grab all the Chips and slam them into their sockets and the computer was ready to go. Here is what the finished DREAM 6800 looks like(still missing the NE566 and MC6875):</p>
+		<p style="width: 75%">Now I only had to grab all the Chips and slam them into their sockets and the computer was ready to go. Here is what the finished DREAM 6800 looks like (still missing the NE566 and MC6875):</p>
 		<a href="pictures/dreamtop.jpg"><img src="pictures/dreamtopsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<p style="width: 75%">Thanks to a very kind donation of Michael Bauer I was able to install the missing NE566 and also replace the Intel 2708 with a Electronic Arrays 2708 in Ceramic Package, so it fits perfectly to the CPU. Because the EPROM-Programmer I normally use does not support 2708's, I used my <a href="../mostek/mostek.html">Mostek Computer</a> which features a 2708/2716 EPROM-Programmer for it. I also made the MC6875 substitute circuit to temporarily replace the missing MC6875 clock signal generator chip.</p>
 		<a href="pictures/chips.jpg"><img src="pictures/chipssmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/eprom.jpg"><img src="pictures/epromsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/6875replacement.jpg"><img src="pictures/6875replacementsmall.jpg" alt="" border="0" width="400" height="300"></a>
-		<p style="width: 75%">First I planned to use a Black Keypad which did not had a Hexadecimal labeling. Not long ago I got contacted by David, who sells little CHIP-8 Computers on <a href="https://chip-8.com/">his Website</a>, and also makes matching Keypads. The Connector is the same as the one that is used on the DREAM 6800 Computer, and he kindly offered me one. The Keys are defently better as the ones used by the black Keypad, and it also features a Reset and Function Key.</p>
+		<p style="width: 75%">First I planned to use a black keypad which did not had a hexadecimal labeling. Not long ago I was contacted by David, who sells little CHIP-8 Computers on <a href="https://chip-8.com/">his Website</a>, and also makes matching Keypads. The Connector is the same as the one that is used on the DREAM 6800 Computer, and he kindly offered me one. The keys are definitely better as the ones used by the black keypad, and it also features a Reset and Function Key.</p>
 		<a href="pictures/keypad.jpg"><img src="pictures/keypadsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/keypadnew.jpg"><img src="pictures/keypadnewsmall.jpg" alt="" border="0" width="300" height="300"></a>
 		<a href="pictures/keypadnewcorner.jpg"><img src="pictures/keypadnewcornersmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<p style="width: 75%">Now the only thing that needed to be done in order to power up my DREAM 6800, is to build a powersupply that offers +12V, +5V and -5V. In the end I decided to just buy a small switched power supply, and wired it all up. Beeing fairly sure that I checked everything I finally powered it up. And... it produced a picture!</p>
 		<a href="pictures/easter.jpg"><img src="pictures/eastersmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/picture.jpg"><img src="pictures/picturesmall.jpg" alt="" border="0" width="400" height="300"></a>
-		<p style="width: 75%">As you can see, the picture doesn't look very well. It is missing the complete left side and also appears twice. After doing some troubleshooting using the picture timing diagram, I figured out that I accidentally shorted H64 and H32. Undoing that mistake solved all the problems! I also changed out the plastic 6821 with a ceramic MC6821.</p>
+		<p style="width: 75%">As you can see, the picture doesn't look very well. It is missing the complete left side and also appears twice on screen. After doing some troubleshooting using the picture timing diagram, I figured out that I accidentally shorted H64 and H32. Undoing that mistake solved all the problems, I finally have a working DREAM 6800! I also changed out the plastic 6821 with a ceramic MC6821.</p>
 		<a href="pictures/videotiming.jpg"><img src="pictures/videotimingsmall.jpg" alt="" border="0" width="430" height="300"></a>
 		<a href="pictures/setup.jpg"><img src="pictures/setupsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/ceramic.jpg"><img src="pictures/ceramicsmall.jpg" alt="" border="0" width="400" height="300"></a>
-		<p style="width: 75%">For the next step I plan to build a nice case for the computer. After that I also want to build some expansion boards for it, defenetly a RAM expansion, maybe even add an ASCII keyboard.</p>
+		<p style="width: 75%">For the next step I plan to build a nice case for the computer. After that I also want to build some expansion boards for it, definitely a RAM expansion, maybe even add an ASCII keyboard.</p>
 				
 		<hr/><p>This page was last modified <span id="lastmodified"></span>.</p><script>document.getElementById("lastmodified").innerHTML = document.lastModified;</script>
 		

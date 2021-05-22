@@ -10,13 +10,13 @@
 		<a href="../../index.html">Back to Main Menu</a>
 		<hr/>
 		
-		<p style="width: 75%">I ever wanted to build my own Computer, but I thought I would never be able to do that. After Ive seen the <a href="https://rc2014.co.uk/">"RC2014" Computer</a>, I realized that its not that complicated and decided to recreate this Computer.
-		The "<a href="http://commodorez.com/cactus.html">Cactus</a>" Computer(using a 6502 CPU and a nice looking Frontpanel) heavily inspired this Computer, especially the Front Panel. So I started building it in the Summer of 2018, and slowly completed all cards. Sadly my Computer inst in a working condition right now, and still heavily under construction.
-		If you wonder about the name, I have choosen this (unordinary) name because 1. I wanted a nice abbreviation 2. I wanted it to have "microcomputer" in it and 3. I wanted the name to indicate that it can perform all kinds of tasks (for example run BASIC, CP/M or just any assmbler code; be programmed through a serial terminal or the frontpanel; control all kinds of electronics through I/O ports) and 4. I dont want the abbreviation to be easily confound with something that already uses this term.</p>
-		<p style="width: 75%">I decided to use a 19" Subrack and eurocards for it, with a 64-Pin Connector on the back.</p>
+		<p style="width: 75%">Since a long time I wanted to build my own computer, but I thought I would never be able to do that. After Ive seen the <a href="https://rc2014.co.uk/">"RC2014" Computer</a>, I realized that it's not that complicated and decided to recreate this Computer.
+		The "<a href="http://commodorez.com/cactus.html">Cactus</a>" computer (which uses a 6502 CPU and features a nice looking front panel) heavily inspired this Computer, especially the front panel. So I started building it in the Summer of 2018, and slowly completed all cards. After almost three years later, I finally managed to get the computer working.
+		If you wonder about the name, I have choosen this (unordinary) name because 1. I wanted a nice abbreviation 2. I wanted it to have "microcomputer" in it and 3. I wanted the name to indicate that it can perform all kinds of tasks (for example run BASIC, CP/M or just any assmbler code; be programmed through a serial terminal or the frontpanel; control all kinds of electronics through I/O ports) and 4. I don't want the abbreviation to be easily confound with something that already uses this term.</p>
+		<p style="width: 75%">I decided to use a 19" Subrack and eurocards for it, with a 64-Pin Connector (DIN 41612) at the back.</p>
 		<a href="pictures/front.jpg"><img src="pictures/frontsmall.jpg" alt="" border="0" width="400" height="300"></a>
 		<a href="pictures/card.jpg"><img src="pictures/cardsmall.jpg" alt="" border="0" width="400" height="300"></a>
-		<p style="width: 75%">This table shows all the cards in the current(or outdated) state:</p>
+		<p style="width: 75%">This table shows all the cards (although some schematics and pictures are outdated, up-to-date schematics can be found further down):</p>
 		<table border="1" style="width:75%">
 			<tr>
 				<th>Name</th>
@@ -38,7 +38,7 @@
 				<td>CPU</td>
 				<td>1.0</td>
 				<td><b>C</b>entral <b>P</b>rocessing <b>U</b>nit</td>
-				<td>Z80A CPU<br>adittional /MEMRD, /MEMWR, /IORD & /IOWR</td>
+				<td>Z80 CPU<br>Additional /MEMRD, /MEMWR, /IORD & /IOWR</td>
 				<td><a href="pictures/cpu.jpg"><img src="pictures/cpusmall.jpg" alt="" border="0" width="200" height="150"></a></td>
 				<td><a href="pictures/CPU.svg"><img src="pictures/CPU.png" alt="" border="0" width="200" height="150"></a></td>
 			</tr>
@@ -55,7 +55,7 @@
 				<td>RAM</td>
 				<td>1.0</td>
 				<td><b>R</b>andom <b>A</b>ccess <b>M</b>emory</td>
-				<td>56k (64k paged)<br>two 62256's</td>
+				<td>56k (64k paged)<br>Two 62256's</td>
 				<td><a href="pictures/ram.jpg"><img src="pictures/ramsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
 				<td><a href="pictures/RAM.svg"><img src="pictures/RAM.png" alt="" border="0" width="200" height="150"></a></td>
 			</tr>
@@ -64,14 +64,14 @@
 				<td>1.0</td>
 				<td><b>R</b>ead <b>O</b>nly <b>M</b>emory<br>
 				Note that the current circuit and the board have an error in it, pins 1 & 2 of the 74'393 need to be swapped and PAGE has to be conected to pin 3 instead of 6.</td>
-				<td>accepts 2716 to 27512<br>can be paged in and out</td>
+				<td>Accepts 2716 to 27512<br>Can be paged in and out</td>
 				<td><a href="pictures/rom.jpg"><img src="pictures/romsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
 				<td><a href="pictures/ROM.svg"><img src="pictures/ROM.png" alt="" border="0" width="200" height="150"></a></td>
 			</tr>
 			<tr>
 				<td>SIO</td>
 				<td>1.0</td>
-				<td><b>S</b>erial <b>I</b>nput <b>O</b>utput<br>Under construction!</td>
+				<td><b>S</b>erial <b>I</b>nput <b>O</b>utput</td>
 				<td>Z80B SIO<br>CTS/RTS Handshake<br>2x RS-232 ports</td>
 				<td><a href="pictures/sio.jpg"><img src="pictures/siosmall.jpg" alt="" border="0" width="200" height="150"></a></td>
 				<td><a href="pictures/SIO.svg"><img src="pictures/SIO.png" alt="" border="0" width="200" height="150"></a></td>
@@ -79,15 +79,22 @@
 			<tr>
 				<td>FPL</td>
 				<td>1.0</td>
-				<td><b>F</b>ront <b>P</b>anel <b>L</b>ogic<br>Under construction!</td>
-				<td>displays current bus status<br>allows examine and deposit up and down<br></td>
+				<td><b>F</b>ront <b>P</b>anel <b>L</b>ogic<br>This board is used to control the front panel. The pictures is outdated; it already has two circuit boards piggybacked onto each other. It still has a few faults, but the indicators as well as memory deposit and examine already work.</td>
+				<td>Displays current bus status<br>Allows examine and deposit up and down<br></td>
 				<td><a href="pictures/fpl.jpg"><img src="pictures/fplsmall.jpg" alt="" border="0" width="200" height="150"></a></td>
 				<td><a href="pictures/front.svg"><img src="pictures/front.png" alt="" border="0" width="200" height="150"></a></td>
 			</tr>
 		</table>
-		<p style="width: 75%">For almost all cards I used the schematics of the RC2014, although I modified some a bit and expanded the bus output. If you want to have a look at the KiCad schematics you can download them <a href="schematics.zip">here</a>. I try to keep them up to date, but some might differ from the current circuit. You can see the bus layout here:</p>
+		<p style="width: 75%">For almost all cards I used the schematics of the RC2014, although I modified some a bit and expanded the bus output. If you want to have a look at the KiCad schematics you can <a href="schematics.zip">download them here</a>. I try to keep them up to date, but some might differ from the current circuit. You can see the bus layout here:</p>
 		<a href="pictures/gpmcbus.png"><img src="pictures/gpmcbussmall.png" alt="" border="0" width="771" height="300"></a>
-		<p style="width: 75%">A detailed Memory Map will be added soon. Once I've got this computer working I will update this page. (I'm working on it!)</p>
+		<p style="width: 75%">After a lot of troubleshooting I finally got the computer working. Here are a few of the problems I found and fixed:</p>
+		<p style="width: 75%">- The old "backplane", which was essentially just connectors interconnected by a ribbon cable, had many loose connections and made the whole computer malfunction. After replacing it with a real backplane I did not had another backplane-related problem.</p>
+		<p style="width: 75%">- The Page circuitry was wired up completley wrong and caused the memory to malfunction.</p>
+		<p style="width: 75%">- I forgot to connect the pull-up resistors on the CPU card with +5V, causing the CPU to malfunction.</p>
+		<p style="width: 75%">- The RAM decoding circuit was wired wrong a couple of times, I had to redo it in order for the RAM to get decoded correctly.</p>
+		<p style="width: 75%">In order to test the basic computer, I wrote a simple program that increases register A and outputs it to an 8-bit output port. After some small problems with the output-port circuitry and fiddling around with jumpers I got it working and was able to confirm the computer working. After that I added RAM and SIO and replaced the ROM with BASIC. To my surprise I was greeted with BASIC on the terminal! 
+		However, after a bit of testing I found out that the "OUT" statement sometimes crashes the computer. But not randomly, for example never when I output 00H or FFH to port 00H, but always when I output 01H or 04H to port 00H. I have no idea what causes the problem, there doesn't seem to be a similar problem existing on the RC2014.</p>
+		<p style="width: 75%">But after all, I am quite proud that I built my own working RC2014. It was a fun project and I hope I can expand it even further. I still need to fix a few issues with the RC2014 front panel and the problem that some "OUT" statements crash the computer.</p>
 		
 		<hr/><p>This page was last modified <span id="lastmodified"></span>.</p><script>document.getElementById("lastmodified").innerHTML = document.lastModified;</script>
 		
